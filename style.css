@@ -1,0 +1,152 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.wrapper-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px;
+	width: 1200px;
+	border: 1px solid black;
+	background-color: #F3F3F3;
+}
+
+.wrapper-font {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.wrapper-font > p {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.wrapper-font p, .wrapper-button p {
+	font-size: 18px;
+}
+
+.wrapper-list {
+	margin: 0;
+	padding: 0;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	list-style: none;
+}
+
+.wrapper-list li {
+	margin-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+.h1 {
+	font-size: 30px;
+}
+
+.h2 {
+	font-size: 24px;
+}
+
+.default-font {
+	font-size: 18px;
+}
+
+.signatures {
+	font-size: 16px;
+}
+
+.wrapper-button {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.wrapper-button p {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.wrapper-button button{
+	width: 200px;
+	padding: 15px;
+	cursor: pointer;
+	border: none;
+	color: white;
+	font-weight: 600;
+	transition: background-color 0.2s ease;
+	border-radius: 8px;
+}
+
+.save {
+	background-color: #32CD32;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.save:hover {
+	background-color: #2EB94D;
+}
+
+.delete {
+	background-color: #dc2626;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.delete:hover {
+	background-color: #b91c1c; 
+}
+
+.wrapper-button .cancel {
+	background-color: #E0E0E0; 
+	color: black;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cancel:hover  {
+	background-color: #CCCCCC;
+	color: black;
+}
+
+.default {
+	background-color: #744ce9;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.default:hover {
+  background-color: #5d39b3;
+}
+
+.wrapper-button-code {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+.code-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 5px;
+	padding-right: 50px;
+  font-family: monospace;
+  font-size: 15px;
+	background-color: #808080;
+	color: #DCDCDC;
+	border-radius: 8px;
+}
+
+.copy-icon {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+}
