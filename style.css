@@ -32,7 +32,9 @@ h1 {
 }
 
 .wrapper-font p, .wrapper-button p {
-	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	font-size: 22px;
 }
 
 .wrapper-list {
@@ -136,8 +138,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	padding: 5px;
-	padding-right: 50px;
+	padding: 10px 20px;
   font-family: monospace;
   font-size: 15px;
 	background-color: #808080;
