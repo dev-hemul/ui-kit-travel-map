@@ -8,10 +8,10 @@ document.querySelectorAll('.code-block code').forEach(codeEl => {
             
             navigator.clipboard.writeText(text)
                 .then(() => {
-                    // Создаем простое всплывающее окно
+                    // Вспліваюче вікно
                     const rect = icon.getBoundingClientRect();
                     const tooltip = document.createElement('div');
-                    tooltip.textContent = '✔ Скопировано!';
+                    tooltip.textContent = '✔ Скопійовано!';
                     tooltip.style.cssText = `
                         position: fixed;
                         top: ${rect.top - 40}px;
@@ -26,7 +26,7 @@ document.querySelectorAll('.code-block code').forEach(codeEl => {
                         animation: fadeInOut 2s ease-in-out forwards;
                     `;
                     
-                    // Добавляем анимацию
+                    // Анімація
                     if (!document.querySelector('#tooltip-animation')) {
                         const style = document.createElement('style');
                         style.id = 'tooltip-animation';
@@ -42,7 +42,7 @@ document.querySelectorAll('.code-block code').forEach(codeEl => {
                     
                     document.body.appendChild(tooltip);
                     
-                    // Удаляем всплывающее окно
+                    // Видалення вікна через 2 секунди
                     setTimeout(() => {
                         if (tooltip.parentNode) {
                             tooltip.parentNode.removeChild(tooltip);
@@ -50,7 +50,7 @@ document.querySelectorAll('.code-block code').forEach(codeEl => {
                     }, 2000);
                 })
                 .catch(err => {
-                    alert("Ошибка копирования: " + err);
+                    alert("Помилка копіювання: " + err);
                 });
         });
     });

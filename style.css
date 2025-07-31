@@ -129,7 +129,7 @@ h1 {
 
 .wrapper-button-code {
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
 	gap: 30px;
 }
 .code-block {
